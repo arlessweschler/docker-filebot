@@ -12,7 +12,7 @@ APP_DATA=/config
 
 # choose archive extractor / media characteristics parser
 ARCHIVE_EXTRACTOR="ShellExecutables"
-MEDIA_PARSER="libmediainfo"
+MEDIA_PARSER="mediainfo"
 
 LIBRARY_PATH="/usr/lib"
 
@@ -26,6 +26,7 @@ CONTAINER_OPTS=" \
     -Dapplication.update=skip \
     -Dawt.useSystemAAFontSettings=on \
     -Dnet.filebot.UserFiles.fileChooser=Zenity \
+    -Dnet.filebot.util.prefs.sync=true \
 "
 
 # start filebot
